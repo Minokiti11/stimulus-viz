@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "root": "/Users/minorisugimura/GitHub/stimulus-viz/example_project",
+    "generated_at": "2026-01-01T23:49:27+09:00"
+  },
+  "controllers": [
+    {
+      "name": "hello",
+      "module": "app/javascript/controllers/hello_controller.js",
+      "elements": 2,
+      "actions": [],
+      "targets": [],
+      "values": [
+        "name"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "id": "el_0001",
+      "selector": "app/views/home/index.html.erb:1 <div data-controller=...>",
+      "controllers": [
+        "hello"
+      ],
+      "actions": [],
+      "targets": [],
+      "values": [
+        {
+          "controller": "hello",
+          "name": "name",
+          "value": "World"
+        }
+      ]
+    },
+    {
+      "id": "el_0002",
+      "selector": "app/views/home/index.html.erb:2 <input data-hello-tar...>",
+      "controllers": [],
+      "actions": [],
+      "targets": [
+        {
+          "controller": "hello",
+          "name": "name",
+          "selector": "(static)"
+        }
+      ],
+      "values": []
+    },
+    {
+      "id": "el_0003",
+      "selector": "app/views/home/index.html.erb:3 <button data-action=\"...>",
+      "controllers": [],
+      "actions": [
+        "click->hello#greet"
+      ],
+      "targets": [],
+      "values": []
+    },
+    {
+      "id": "el_0004",
+      "selector": "app/views/home/index.html.erb:4 <p data-hello-target=...>",
+      "controllers": [],
+      "actions": [],
+      "targets": [
+        {
+          "controller": "hello",
+          "name": "output",
+          "selector": "(static)"
+        }
+      ],
+      "values": []
+    },
+    {
+      "id": "el_0005",
+      "selector": "app/views/home/index.html.erb:7 <div data-controller=...>",
+      "controllers": [
+        "unknown-controller"
+      ],
+      "actions": [],
+      "targets": [],
+      "values": [],
+      "broken": true
+    },
+    {
+      "id": "el_0006",
+      "selector": "app/views/home/index.html.erb:8 <span data-action=\"in...>",
+      "controllers": [],
+      "actions": [
+        "invalid-format"
+      ],
+      "targets": [],
+      "values": []
+    },
+    {
+      "id": "el_0007",
+      "selector": "app/views/home/index.html.erb:11 <div data-controller=...>",
+      "controllers": [
+        "hello"
+      ],
+      "actions": [],
+      "targets": [],
+      "values": [],
+      "broken": true
+    }
+  ],
+  "lint": [
+    {
+      "level": "warn",
+      "title": "Unknown controller",
+      "detail": "Controller 'unknown-controller' is referenced but not found in controllers directory",
+      "where": "app/views/home/index.html.erb:7 <div data-controller=...>"
+    },
+    {
+      "level": "info",
+      "title": "Empty binding",
+      "detail": "Element has data-controller but no actions, targets, or values",
+      "hint": "Consider adding data-action, targets, or values to make the controller useful",
+      "where": "app/views/home/index.html.erb:7 <div data-controller=...>"
+    },
+    {
+      "level": "warn",
+      "title": "Suspicious action format",
+      "detail": "Action 'invalid-format' doesn't match expected 'event->controller#method' format",
+      "hint": "Expected format: 'click->controller#method'",
+      "where": "app/views/home/index.html.erb:8 <span data-action=\"in...>"
+    },
+    {
+      "level": "info",
+      "title": "Empty binding",
+      "detail": "Element has data-controller but no actions, targets, or values",
+      "hint": "Consider adding data-action, targets, or values to make the controller useful",
+      "where": "app/views/home/index.html.erb:11 <div data-controller=...>"
+    }
+  ]
+}

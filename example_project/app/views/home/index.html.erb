@@ -1,0 +1,13 @@
+<div data-controller="hello" data-hello-name-value="World">
+  <input data-hello-target="name" type="text" placeholder="Enter your name">
+  <button data-action="click->hello#greet">Greet</button>
+  <p data-hello-target="output"></p>
+</div>
+
+<div data-controller="unknown-controller">
+  <span data-action="invalid-format">Bad action</span>
+</div>
+
+<div data-controller="hello">
+  <!-- Empty binding - no actions, targets, or values -->
+</div>

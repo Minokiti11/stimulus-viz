@@ -1,0 +1,25 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# rspec failure tracking
+.rspec_status
+
+# Gem build artifacts
+*.gem
+
+# Cache files
+.stimulus-viz.json
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

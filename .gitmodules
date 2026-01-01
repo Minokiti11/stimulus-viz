@@ -1,0 +1,3 @@
+[submodule "test/fixtures/sample_apps"]
+	path = test/fixtures/sample_apps
+	url = https://github.com/yasslab/sample_apps.git
