@@ -5,8 +5,8 @@ require_relative "lib/stimulus_viz/version"
 Gem::Specification.new do |spec|
   spec.name = "stimulus-viz"
   spec.version = StimulusViz::VERSION
-  spec.authors = ["Developer"]
-  spec.email = ["developer@example.com"]
+  spec.authors = ["Minori Sugimura"]
+  spec.email = ["minorex.0117@gmail.com"]
 
   spec.summary = "Rails/Hotwire Stimulus visualization tool"
   spec.description = "Static analysis tool for Stimulus controllers and DOM bindings in Rails applications"
