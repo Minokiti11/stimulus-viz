@@ -1,5 +1,7 @@
 # StimulusViz
 
+[![Gem Version](https://badge.fury.io/rb/stimulus-viz.svg)](https://badge.fury.io/rb/stimulus-viz)
+
 Rails/Hotwire Stimulus visualization tool for static analysis of Stimulus controllers and DOM bindings.
 
 ## Installation
